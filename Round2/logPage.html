@@ -2,14 +2,14 @@
         <TITLE >DeCoder</TITLE>
         <HEAD>
             <SCRIPT SRC="loginJS.js" ></SCRIPT>
-            <SCRIPT SRC="locationJS.js"></SCRIPT>
+            
             <H1>
                 <CENTER>DeCoder</CENTER>
             </H1>
         </HEAD>
         <BODY>
           
-            <FORM action="locationPage.html">
+            <FORM onsubmit="return buttonOnClick()">
                    <CENTER>
                     Login ID :
                     <INPUT type="text" id="loginId">
@@ -18,7 +18,7 @@
                     Password :
                     <INPUT type="password" id="password">
                     <BR>
-                    <BUTTON id="login" onclick="buttonOnClick()">Login!</BUTTON>
+                    <BUTTON id="login" type="submit">Login!</BUTTON>
                 </CENTER>
             </FORM>
         </BODY>

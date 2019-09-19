@@ -3,17 +3,21 @@
         <SCRIPT SRC="locationJS.js"></SCRIPT>
     </HEAD>
     <BODY onload="doOnLoad()">
+    
         <CENTER>
         <P id="logID">Testing Here</P>
         <BR>
+        </CENTER>
+    </BODY>
         <BR>
-        <FORM action="finalQuestion.html">
+        <CENTER>
+        <FORM onsubmit="return doOnClick()">
             Question Here : 
             <BR>
             <INPUT type="text" id="answerToQuestion">
             <BR>
-            <BUTTON id="goToNext" onclick="onClick()">See the final question</BUTTON>
+            <BUTTON id="goToNext" type="submit">See the final question</BUTTON>
         </FORM>
     </CENTER>
-    </BODY>
+    
 </HTML>
