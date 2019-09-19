@@ -19,7 +19,7 @@ function buttonOnClick() {
         console.log(questionsArray[index])
         localStorage.setItem("question",questionsArray[index])
         console.log("End of setQuestion")
-        window.location.href = "file:///Users/abhishekdantale/DOCS/Code/ClashOfCoders/Round2/locationPage.html"
+        window.location.href = "locationPage.html"
         return false
     }
     return true
