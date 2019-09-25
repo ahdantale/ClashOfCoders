@@ -16,20 +16,8 @@ session_start();
   <body>
  
   <div class="jumbotron">
-  <h1 class="display-4">Hello <?php echo $_SESSION['userID'];?></h1>
-  <p class="lead">Welcome to Round 3 ProCode phase1</p>
-  <hr class="my-4">
-  <p>Solve Any One</p>
-  <form action="ctr1_round3.php" method="POST">
-  <label>Question1:What is 000 & 111?</label>
-  <input type="text" name="ans1" style="width:400px;" class="form-control"><br>
-  <input type="submit" class="btn btn-primary"><hr>
-  <label>Question2:what is 000 || 111?</label>
-  <input type="text" name="ans2" style="width:400px;" class="form-control"><br>
-  <input type="submit" class="btn btn-primary">
-  </form>
-
-</div>
+  <h1>Congrats you are done!</h1>
+  </div>
 
 
 

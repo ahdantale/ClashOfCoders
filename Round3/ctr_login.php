@@ -1,5 +1,21 @@
 <?php
 session_start();
-$_SESSION['userID']=$_POST['teamID'];
-header('location:round3_phase1.php');
+$conn=mysqli_connect('localhost','root','','clashofcoder');
+if($conn)
+{
+    
+    $get="SELECT * FROM coders WHERE TEAM_ID='".$_POST['teamID']."'";
+    $fire=mysqli_query($conn,$get);
+    $rows=mysqli_fetch_array($fire);
+    
+    if($fire)
+    {
+       
+        $_SESSION['userID']=$rows[1];
+        $_SESSION['pass']=$rows[2];
+        header('location:round3_phase1.php');
+    }
+
+}
+
 ?>
