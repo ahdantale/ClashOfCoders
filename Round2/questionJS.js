@@ -1,4 +1,4 @@
-var finalAnswerArray = ["FAns1","FAns2","FAns3","FAns4","FAns5"]
+var finalAnswerArray = ["FAns1","FAns2","FAns3","FAns4","FAns5","FAns6","FAns7","FAns8","FAns9","FAns10"]
 
 
 function questionHere() {
