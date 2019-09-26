@@ -16,7 +16,7 @@ var finalAnswerArray = [
     "724",
     "10 is the value at the index 6.",
     "49988766543311",
-    "FAns4",
+    "CDE – lmn – OPQ – IJK – AAA – klm",
     "school master = classroom, dormitory = dirty room, dusty = study",
     "3   4   5   0   5<br>2   3   8   7   0<br>1   2   7   8   7<br>6   1   6   9   6<br>9   4   3   4   5",
     "LEFT : 'kvjbefnbakdfbkhdefkjneofuhiywgrfadjnouukhbwriwhbfkadijkhbdkbkbwdknkjbs' <br>  RIGHT:'ijkhbdkbkbwdknkjbskvjbefnbakdfbkhdefkjneofuhiywgrfadjnouukhbwriwhbfkad'",
