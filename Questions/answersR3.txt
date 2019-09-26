@@ -1,0 +1,119 @@
+######Gas Station 
+A : [ 3, 2, 1 ]
+B : [ 1, 3, 2 ]
+
+answer 0
+
+A : [ 3, 5, 4, 2, 1 ]
+B : [ 3, 5, 3, 2, 1 ]
+
+answer 0 
+
+A : [ 3, 1, 4, 2, 5 ]
+B : [ 3, 2, 3, 2, 1 ]
+answer 
+2
+
+
+#####Longest Increasing Subsequence
+
+A : [ 2, 4, 6, 8, 10, 9, 7, 5, 3, 1, 11, 13, 15, 17, 19, 18, 16, 14, 12, 20 ]
+Answer 11
+
+######Palindrome Partitioning
+
+A : "sfjalsdkjfassfdjal"
+
+Answer 16
+
+A : "ILikeCodingAndStuff"
+
+17
+
+A : "BBBILikeCodingAndStuffAndTechnologyAAA"
+
+ANswer 30
+
+####Word Break
+
+A : "aaaaaaaaaaaaaaaaaaaabbbbbb##################cccddddeedddee"
+B : [ "aaaaa", "bbb", "###", "ccc", "ddddee" ]
+
+Answer 0
+
+####word ladder
+
+7 duck dode doce docf ducf code dock 
+There are 1 lines in the input
+
+Line 1: The dictionary. First integer is the size S of the array. Then S space separated strings follow which indicate the elements in the array.
+
+The second last and the last string are taken as the start and end respectively.
+	For example, Dict: ["log", "hog"], start: "hot", end: "cog" will be written as "4 log hog hot cog"(without quotes).
+ 
+Your function returned the following output:
+[code dode doce dock ] 
+
+12 cook dook duok euok fuok guok luok lumk lunk luik book luck
+There are 1 lines in the input
+
+Line 1: The dictionary. First integer is the size S of the array. Then S space separated strings follow which indicate the elements in the array.
+
+The second last and the last string are taken as the start and end respectively.
+	For example, Dict: ["log", "hog"], start: "hot", end: "cog" will be written as "4 log hog hot cog"(without quotes).
+ 
+Your function returned the following output:
+[book dook duok luok luck ]
+
+longer test case needed
+
+#####Subset
+
+[ 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+Answer 1048576
+
+
+#Phone 
+5978
+jwpt jwpu jwpv jwqt jwqu jwqv jwrt jwru jwrv jwst jwsu jwsv jxpt jxpu jxpv jxqt jxqu jxqv jxrt jxru jxrv jxst jxsu jxsv jypt jypu jypv jyqt jyqu jyqv jyrt jyru jyrv jyst jysu jysv jzpt jzpu jzpv jzqt jzqu jzqv jzrt jzru jzrv jzst jzsu jzsv kwpt kwpu kwpv kwqt kwqu kwqv kwrt kwru kwrv kwst kwsu kwsv kxpt kxpu kxpv kxqt kxqu kxqv kxrt kxru kxrv kxst kxsu kxsv kypt kypu kypv kyqt kyqu kyqv kyrt kyru kyrv kyst kysu kysv kzpt kzpu kzpv kzqt kzqu kzqv kzrt kzru kzrv kzst kzsu kzsv lwpt lwpu lwpv lwqt lwqu lwqv lwrt lwru lwrv lwst lwsu lwsv lxpt lxpu lxpv lxqt lxqu lxqv lxrt lxru lxrv lxst lxsu lxsv lypt lypu lypv lyqt lyqu lyqv lyrt lyru lyrv lyst lysu lysv lzpt lzpu lzpv lzqt lzqu lzqv lzrt lzru lzrv lzst lzsu lzsv 
+98
+wt wu wv xt xu xv yt yu yv zt zu zv 
+
+###Parenthesis
+10
+(((((((((()))))))))) ((((((((()())))))))) ((((((((())()))))))) ((((((((()))())))))) ((((((((())))()))))) ((((((((()))))())))) ((((((((())))))()))) ((((((((()))))))())) ((((((((())))))))()) ((((((((()))))))))() (((((((()(())))))))) (((((((()()()))))))) (((((((()())())))))) (((((((()()))()))))) (((((((()())))())))) (((((((()()))))()))) (((((((()())))))())) (((((((()()))))))()) (((((((()())))))))() (((((((())(()))))))) (((((((())()())))))) (((((((())())()))))) (((((((())()))())))) (((((((())())))()))) (((((((())()))))())) (((((((())())))))()) (((((((())()))))))() (((((((()))(())))))) (((((((()))()()))))) (((((((()))())())))) (((((((()))()))()))) (((((((()))())))())) (((((((()))()))))()) (((((((()))())))))() (((((((())))(()))))) (((((((())))()())))) (((((((())))())()))) (((((((())))()))())) (((((((())))())))()) (((((((())))()))))() (((((((()))))(())))) (((((((()))))()()))) (((((((()))))())())) (((((((()))))()))()) (((((((()))))())))() (((((((())))))(()))) (((((((())))))()())) (((((((()))))
+3
+((())) (()()) (())() ()(()) ()()() 
+
+
+##Add characters for the string to be a Palindrome
+
+A : "aabbccddeefffghhfffeeddccbb"
+
+25
+
+A : abcd
+
+3
+
+####Stringaholics
+
+A : [ "aa", "aabc", "aabbcc", "aaabbbccc", "aaaabbbbcccc" ]
+Your function returned the following output:
+168
+
+A : [ "abc", "abcd", "abcde", "code", "luck", "good", "tech" ]
+Your function returned the following output:
+28
+
+###Mosaic 
+36 ans 24
+144 ans 48
+1024 ans 20
+4064256 ans 3360
+104976000 ans 3925350
+
+## even number of odd digits and odd number of even digits
+l, r = '959', '1159' ans 21
+l, r = '9959', '91111191159' ans 41010140580
