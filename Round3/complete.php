@@ -1,25 +1,5 @@
 <?php 
 session_start();
-$_SESSION['count']++;
-$count=$_SESSION['count'];
-$que = array("1"=>"Que:- Square of 2 is ?", "2"=>"Que:-square root of 9?","3"=>"Que:- cube of 3?","4"=>"Que:=square of 2?");
-if($_SESSION['count']>3)
-{
-  $_SESSION['count']=4;
-  $count=$_SESSION['count'];
-}
-if($count==2)
-{
-  $_SESSION['mpoints']-=15;
-}
-if($count==3)
-{
-  $_SESSION['mpoints']-=15;
-}
-if($count==4)
-{
-  $_SESSION['mpoints']-=15;
-}
 ?>
 <!doctype html>
 <html lang="en">
@@ -30,26 +10,23 @@ if($count==4)
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <title>Quiz</title>
-    <SCRIPT type="text/javascript">
-	window.history.forward();
-	function noBack() { window.history.forward(); }
-</SCRIPT>
-</head>
-  <body onload="noBack();" 
-	onpageshow="if (event.persisted) noBack();">
-<div class="jumbotron">
- <h1 class="display-4">Hello <?php echo $_SESSION['userID'];?></h1>
-  <p class="lead">Welcome to Phase3</p>
-  <hr class="my-4">
- <form action="ctr3_round3.php" method="POST" >
-  <label><?php echo $que[$count];?></label>
-  <input type="text" name="<?php echo "ans$count";?>" style="width:400px;" class="form-control"><br>
-  <input type="submit" class="btn btn-primary"><hr>
+  </head>
+  <body>
  
-  </form>
- </div> 
+  <div class="jumbotron">
+  <h1>Congrats you are done!</h1>
+  </div>
+
+
+
+
+
+
+
+
+
 
 
     <!-- Optional JavaScript -->

@@ -12,8 +12,13 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Quiz</title>
+    <SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+</SCRIPT>
   </head>
-  <body>
+  <body onload="noBack();" 
+	onpageshow="if (event.persisted) noBack();">
  
   <div class="jumbotron">
   <h1 class="display-4">Hello <?php echo $_SESSION['userID'];?></h1>
@@ -21,7 +26,7 @@ session_start();
   <hr class="my-4">
   <p></p>
   <form action="ctr2_round3.php" method="POST">
-  <label>Compulsory Question</label>
+  <label>Compulsory Question:what is binary of 5?</label>
   <input type="text" name="ans3" style="width:400px;" class="form-control"><br>
   <input type="submit" class="btn btn-primary"><hr>
  
