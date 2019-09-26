@@ -13,7 +13,6 @@ var question9 = "<br>Find the sum of the elements of it’s 20th  row of the fol
 var question10 = "<br>Given a series find the 15,000th term :<br>216, 3456, 24000, 108000, 370440...<br>"
 var finalQuestionArray = [question1,question2,question3,question4,question5,question6,question7,question8,question9,question10]
 
-var finalAnswerArray = ["FAns1","FAns2","FAns3","FAns4","FAns5","FAns6","FAns7","FAns8","FAns9","FAns10"]
 
 function doOnLoad() {
     
