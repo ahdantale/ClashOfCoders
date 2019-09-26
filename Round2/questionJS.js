@@ -1,5 +1,16 @@
-var finalAnswerArray = ["FAns1","FAns2","FAns3","FAns4","FAns5","FAns6","FAns7","FAns8","FAns9","FAns10"]
 
+var finalAnswerArray = [
+    "724",
+    "10",
+    "49988766543311",
+    "CDE – lmn – OPQ – IJK – AAA – klm",
+    "3",
+    "3450523870127876169694345",
+    "kvjbefnbakdfbkhdefkjneofuhiywgrfadjnouukhbwriwhbfkadijkhbdkbkbwdknkjbsijkhbdkbkbwdknkjbskvjbefnbakdfbkhdefkjneofuhiywgrfadjnouukhbwriwhbfkad",
+    "112492500",
+    "6,84,288",
+    "170961915687564597758100120000"
+]
 
 function questionHere() {
     var questionSelected = localStorage.getItem("finalQuestion")
