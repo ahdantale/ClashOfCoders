@@ -13,6 +13,10 @@ var finalAnswerArray = [
 ]
 
 function questionHere() {
+    
+    var logID = localStorage.getItem("loginID")
+    console.log(logID)
+    document.getElementById("logID").innerHTML = logID
     var questionSelected = localStorage.getItem("finalQuestion")
     document.getElementById("questionHere").innerHTML = questionSelected
     console.log(questionSelected)
