@@ -1,0 +1,27 @@
+locations
+
+length
+1. WATER COOLER (ground floor)        -  dM_O[(JUTPHT
+2. IDBI ATM                           -  RLIO%EWO
+3. PARKING TREE                       -  ]M]URVN&YVHG
+
+
+
+4. Trreace
+5. dbms lab
+6. stairs
+
+len_def_alt
+7. Himalaya                         - Hqmiliyi
+8. MH49 AQ1179                      - NI5:!BR228:
+9. Computer science and engineering - Fqprxvht#ufkhpfg#cqf#gqilphgukqi
+
+L/2R+
+10. classroom
+11. main gate
+12. notice board
+
+XLENGTH
+13. staff parking
+14. pond
+15. firepipe
