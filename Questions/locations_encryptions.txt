@@ -1,27 +1,47 @@
 locations
 
-length
+#length
 1. WATER COOLER (ground floor)        -  dM_O[(JUTPHT
 2. IDBI ATM                           -  RLIO%EWO
 3. PARKING TREE                       -  ]M]URVN&YVHG
+4. STAFF PARKING                      -  aaMQP)XHXPMQI 
+
+        example:-
+          1. FIREBIRD              - OQYKGMUF
+          2. MEMBER OF PARLIAMENT  - bY`TVb/]S,[K[TPGRIQV
+          3. DENNIS RITCHIE        - SS[ZT])ZPZHLLG
+
+#length_half
+5. TERRACE                            -  WGSSCFI
+6. DBMS_LAB                           -  HEOT`NDF
+7. STAIRS                             -  VVBJTV
+8. POND                               -  RPOF
+
+        example:-
+        1. NETWORKING             - SIWYPSMLRL
+        2. WORKSHOP               - [RTLTJRT
+        3. DEBUG CONSOLE          - JJFXI!DQQWTRL
+ 
+#len_def_alt
+8. HIMALAYA                            - HQMILIYI
+9. MH49 AQ1179                         - NI5:!BR228:
+10. Computer science and engineering   - Fqprxvht#ufkhpfg#cqf#gqilphgukqi
+11. FIREPIPE                           - FQRMPQPM
+
+        example:-
+        1. GAME OF THRONES             - HFNJ!TG%UMSTOJT
+        2. INSTAGRAM                   - IWS]APRJM
+        3. PROJECTOR                   - P[OSELTXR
+
+#length_factor 
+11. classroom                         - dobvtuprn
+12. main gate                         - ndjq!jbwf
+12. notice board                      - oqwmif"esgsf
+        
+        example:-
+        1. NETFILX                     - OFUGMJY
+        2. F**K JAVA                   - G-+N!MBYB
+        3. THERMAL PASTE               - UIFSNBM!QBTUF
 
 
 
-4. Trreace
-5. dbms lab
-6. stairs
-
-len_def_alt
-7. Himalaya                         - Hqmiliyi
-8. MH49 AQ1179                      - NI5:!BR228:
-9. Computer science and engineering - Fqprxvht#ufkhpfg#cqf#gqilphgukqi
-
-L/2R+
-10. classroom
-11. main gate
-12. notice board
-
-XLENGTH
-13. staff parking
-14. pond
-15. firepipe
