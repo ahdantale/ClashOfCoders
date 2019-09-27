@@ -1,13 +1,44 @@
 <?php 
 session_start();
+
+require('questionr3.php');
 $_SESSION['count']++;
-$count=$_SESSION['count'];
-$que = array("1"=>"Que:- what is hello?", "2"=>"Que:- what is world?","3"=>"Que:- what is java?","4"=>"warning! you have reached your refresh limit. Type sorry to proceed next!");
-if($_SESSION['count']>3)
+if($_SESSION['count']<=4)
 {
-  $_SESSION['count']=4;
-  $count=$_SESSION['count'];
+
+$count=$_SESSION['count'];
 }
+// $count=$_SESSION['count1'];
+// $que1 = array("1"=>"Que:- What is 000 & 111 ?", "2"=>"Que:what is 000 || 111??","3"=>"Que:- what is complement of 000?","4"=>"Que:=What is 000 & 111?");
+// $que2 = array("1"=>"Que:- What is 000 & 111 ?", "2"=>"Que:what is 000 || 111??","3"=>"Que:- what is complement of 000?","4"=>"Que:=What is 000 & 111?");
+
+
+if($_SESSION['count']>=4)
+{
+  
+  $count=4;
+  
+}
+if($_SESSION['count']<=4){
+if($count==2)
+{
+  $_SESSION['mpoints']-=50;
+
+}
+if($count==3)
+{
+  $_SESSION['mpoints']-=50;
+}
+if($count==4)
+{
+  $_SESSION['mpoints']-=50;
+}
+} else {
+//   $_SESSION['count1']=4;
+  $count=4;
+}
+echo $count;
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -20,15 +51,20 @@ if($_SESSION['count']>3)
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Quiz</title>
+    <SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+</SCRIPT>
 </head>
-  <body>
+  <body onload="noBack();" 
+	onpageshow="if (event.persisted) noBack();">
 <div class="jumbotron">
  <h1 class="display-4">Hello <?php echo $_SESSION['userID'];?></h1>
   <p class="lead">Welcome to Phase3</p>
   <hr class="my-4">
  <form action="ctr3_round3.php" method="POST" >
   <label><?php echo $que[$count];?></label>
-  <input type="text" name="ans4" style="width:400px;" class="form-control"><br>
+  <input type="text" name="<?php echo "ans$count";?>" style="width:400px;" class="form-control"><br>
   <input type="submit" class="btn btn-primary"><hr>
  
   </form>

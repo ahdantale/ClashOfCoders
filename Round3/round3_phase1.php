@@ -1,5 +1,42 @@
 <?php 
+require('question.php');
 session_start();
+$_SESSION['count1']++;
+if($_SESSION['count1']<=4)
+{
+
+$count=$_SESSION['count1'];
+}
+// $count=$_SESSION['count1'];
+// $que1 = array("1"=>"Que:- What is 000 & 111 ?", "2"=>"Que:what is 000 || 111??","3"=>"Que:- what is complement of 000?","4"=>"Que:=What is 000 & 111?");
+// $que2 = array("1"=>"Que:- What is 000 & 111 ?", "2"=>"Que:what is 000 || 111??","3"=>"Que:- what is complement of 000?","4"=>"Que:=What is 000 & 111?");
+
+
+if($_SESSION['count1']>=4)
+{
+  
+  $count=4;
+  
+}
+if($_SESSION['count1']<=4){
+if($count==2)
+{
+  $_SESSION['mpoints']-=25;
+
+}
+if($count==3)
+{
+  $_SESSION['mpoints']-=25;
+}
+if($count==4)
+{
+  $_SESSION['mpoints']-=25;
+}
+} else {
+//   $_SESSION['count1']=4;
+  $count=4;
+}
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,21 +49,24 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Quiz</title>
+    <SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+</SCRIPT>
   </head>
-  <body>
- 
+  <body onload="noBack();" 
+	onpageshow="if (event.persisted) noBack();">
+  
   <div class="jumbotron">
   <h1 class="display-4">Hello <?php echo $_SESSION['userID'];?></h1>
   <p class="lead">Welcome to Round 3 ProCode phase1</p>
   <hr class="my-4">
   <p>Solve Any One</p>
   <form action="ctr1_round3.php" method="POST">
-  <label>Question1:</label>
+  <label><?php echo $que1[$count];?></label>
   <input type="text" name="ans1" style="width:400px;" class="form-control"><br>
   <input type="submit" class="btn btn-primary"><hr>
-  <label>Question2:</label>
-  <input type="text" name="ans2" style="width:400px;" class="form-control"><br>
-  <input type="submit" class="btn btn-primary">
+  
   </form>
 
 </div>
