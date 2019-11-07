@@ -21,7 +21,7 @@ session_start();
   <hr class="my-4">
   <p></p>
   <form action="ctr2_round3.php" method="POST">
-  <label>Compulsory Question</label>
+  <label>Compulsory Question:what is binary of 5?</label>
   <input type="text" name="ans3" style="width:400px;" class="form-control"><br>
   <input type="submit" class="btn btn-primary"><hr>
  

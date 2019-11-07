@@ -2,11 +2,23 @@
 session_start();
 $_SESSION['count']++;
 $count=$_SESSION['count'];
-$que = array("1"=>"Que:- what is hello?", "2"=>"Que:- what is world?","3"=>"Que:- what is java?","4"=>"warning! you have reached your refresh limit. Type sorry to proceed next!");
+$que = array("1"=>"Que:- Square of 2 is ?", "2"=>"Que:-square root of 9?","3"=>"Que:- cube of 3?","4"=>"Que:=square of 2?");
 if($_SESSION['count']>3)
 {
   $_SESSION['count']=4;
   $count=$_SESSION['count'];
+}
+if($count==2)
+{
+  $_SESSION['points']-=15;
+}
+if($count==3)
+{
+  $_SESSION['points']-=15;
+}
+if($count==4)
+{
+  $_SESSION['points']-=15;
 }
 ?>
 <!doctype html>
@@ -28,7 +40,7 @@ if($_SESSION['count']>3)
   <hr class="my-4">
  <form action="ctr3_round3.php" method="POST" >
   <label><?php echo $que[$count];?></label>
-  <input type="text" name="ans4" style="width:400px;" class="form-control"><br>
+  <input type="text" name="<?php echo "ans$count";?>" style="width:400px;" class="form-control"><br>
   <input type="submit" class="btn btn-primary"><hr>
  
   </form>
